@@ -1,4 +1,7 @@
-﻿using OpenQA.Selenium;
+﻿using System.Linq;
+using NUnit.Framework;
+using OpenQA.Selenium;
+using Specflow.Data.Models;
 using TechTalk.SpecFlow;
 
 namespace SpecflowTest.Specs
@@ -28,10 +31,16 @@ namespace SpecflowTest.Specs
             registerPage.ClickRegister();
         }
 
-        [Then(@"a new account is created")]
-        public void ThenANewAccountIsCreated()
+        [Then(@"a new account is created with a username of  a Username of '(.*)'")]
+        public void ThenANewAccountIsCreatedWithAUsernameOfAUsernameOf(string username)
         {
-            ScenarioContext.Current.Pending();
+            using (var context = new SpecflowTestContext())
+            {
+                var allUserProfiles = context.UserProfiles.ToList();
+
+                Assert.That(allUserProfiles.Count, Is.EqualTo(1));
+                Assert.That(allUserProfiles.First().UserName, Is.EqualTo(username));
+            }
         }
     }
 }

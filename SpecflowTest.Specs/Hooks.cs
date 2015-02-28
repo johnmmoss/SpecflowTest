@@ -1,6 +1,8 @@
 ﻿using System.Configuration;
+using System.Linq;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
+using Specflow.Data.Models;
 using TechTalk.SpecFlow;
 
 namespace SpecflowTest.Specs
@@ -17,12 +19,20 @@ namespace SpecflowTest.Specs
             IWebDriver driver = new FirefoxDriver();
             FeatureContext.Current.Set(driver);
             driver.Navigate().GoToUrl(Url);
+
+            // Empty the database ready for the tests
+            using (var context = new SpecflowTestContext())
+            {
+                context.Database.ExecuteSqlCommand("DELETE FROM UserProfile");
+            }
         }
 
         [AfterFeature]
         public static void AfterFeature()
         {
+            // Clear up the webdriver
             var webDriver = FeatureContext.Current.Get<IWebDriver>();
+            webDriver.Quit();
             webDriver.Dispose();
         }
 
