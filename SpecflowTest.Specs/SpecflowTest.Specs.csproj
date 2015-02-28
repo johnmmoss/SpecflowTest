@@ -75,6 +75,12 @@
       <LastGenOutput>UserAccount.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SpecflowTest.Data\SpecflowTest.Data.csproj">
+      <Project>{E7CE6E17-9E4C-49C2-B7D6-532C21C4A29D}</Project>
+      <Name>SpecflowTest.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

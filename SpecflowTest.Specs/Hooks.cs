@@ -1,8 +1,7 @@
 ﻿using System.Configuration;
-using System.Linq;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
-using Specflow.Data.Models;
+using SpecflowTest.Data.Models;
 using TechTalk.SpecFlow;
 
 namespace SpecflowTest.Specs
