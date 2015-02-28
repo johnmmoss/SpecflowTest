@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Specflow.Data.Models
+namespace SpecflowTest.Data.Models
 {
     public partial class webpages_Membership
     {

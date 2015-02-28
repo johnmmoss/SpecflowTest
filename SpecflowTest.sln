@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecflowTest.Specs", "Specf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecflowTest.Web", "SpecflowTest.Web\SpecflowTest.Web.csproj", "{6F851993-3942-41AB-A6D0-DC8A6C72B5C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Specflow.Data", "Specflow.Data\Specflow.Data.csproj", "{E7CE6E17-9E4C-49C2-B7D6-532C21C4A29D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecflowTest.Data", "SpecflowTest.Data\SpecflowTest.Data.csproj", "{E7CE6E17-9E4C-49C2-B7D6-532C21C4A29D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

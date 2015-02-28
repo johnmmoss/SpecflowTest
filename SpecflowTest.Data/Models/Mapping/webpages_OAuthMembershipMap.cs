@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
 
-namespace Specflow.Data.Models.Mapping
+namespace SpecflowTest.Data.Models.Mapping
 {
     public class webpages_OAuthMembershipMap : EntityTypeConfiguration<webpages_OAuthMembership>
     {

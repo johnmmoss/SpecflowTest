@@ -1,7 +1,7 @@
 using System.Data.Entity;
-using Specflow.Data.Models.Mapping;
+using SpecflowTest.Data.Models.Mapping;
 
-namespace Specflow.Data.Models
+namespace SpecflowTest.Data.Models
 {
     public partial class SpecflowTestContext : DbContext
     {

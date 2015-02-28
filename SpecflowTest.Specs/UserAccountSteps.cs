@@ -1,7 +1,6 @@
 ﻿using System.Linq;
 using NUnit.Framework;
-using OpenQA.Selenium;
-using Specflow.Data.Models;
+using SpecflowTest.Data.Models;
 using TechTalk.SpecFlow;
 
 namespace SpecflowTest.Specs
