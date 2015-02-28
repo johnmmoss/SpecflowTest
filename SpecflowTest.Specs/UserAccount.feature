@@ -5,8 +5,6 @@
 
 Scenario: User can register to use the site
 	Given I am on the register page
-	And I have entered the following deatails into the form:
-	| User name | Password    |
-	| johnmmoss | P@ssword123 |
+	And I have entered a Username of 'johnmmoss' and a password of 'P@ssword123'
 	When I press register
 	Then a new account is created

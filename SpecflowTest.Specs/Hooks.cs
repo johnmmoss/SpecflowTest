@@ -31,7 +31,7 @@ namespace SpecflowTest.Specs
         {
             // At the begining of the scenario, we are on the homepage
             var webDriver = FeatureContext.Current.Get<IWebDriver>();
-            HomePage homePage = new HomePage(webDriver);
+            var homePage = new HomePage(webDriver);
             ScenarioContext.Current.Set<HomePage>(homePage);
         }
 

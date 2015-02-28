@@ -74,18 +74,11 @@ namespace SpecflowTest.Specs
 this.ScenarioSetup(scenarioInfo);
 #line 7
  testRunner.Given("I am on the register page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
-                        "User name",
-                        "Password"});
-            table1.AddRow(new string[] {
-                        "johnmmoss",
-                        "P@ssword123"});
 #line 8
- testRunner.And("I have entered the following deatails into the form:", ((string)(null)), table1, "And ");
-#line 11
+ testRunner.And("I have entered a Username of \'johnmmoss\' and a password of \'P@ssword123\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 9
  testRunner.When("I press register", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 12
+#line 10
  testRunner.Then("a new account is created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
